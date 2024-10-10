@@ -1,2 +1,4 @@
 application.properties
 .idea
+target/
+.mvn/
