@@ -13,11 +13,11 @@ import java.util.Date;
 @Data // Lombok: Genera getters, setters, equals, hashCode, y toString
 @NoArgsConstructor // Lombok: Genera un constructor sin argumentos
 @AllArgsConstructor // Lombok: Genera un constructor con todos los argumentos
-public class UsuarioEntity {
+public class Usuario {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-private Long id;
+private Long idUsuario;
 
 @Column(name = "rut", nullable = true)
 private int rut;
@@ -35,9 +35,12 @@ private JPasswordField contrasena;
 private String rol;
 
 @Column(name = "fechaNacimiento", nullable = true)
-private Date fecha_nacimiento;
+private Date fechaNacimiento;
+
+@Column(name = "genero", nullable = true)
+private Boolean genero;
 
 @Column(name = "sexo", nullable = true)
-private Boolean sexo;
+private Boolean estado;
 
 }
