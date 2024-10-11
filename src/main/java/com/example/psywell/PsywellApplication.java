@@ -1,4 +1,4 @@
-package com.example.psywell.util;
+package com.example.psywell;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
