@@ -4,18 +4,17 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 
-@Entity
-@Table(name = "usuario")
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Usuarios implements Serializable {
+@Entity
+@Table(name = "usuario")
+public class UserEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

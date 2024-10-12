@@ -1,9 +1,9 @@
 package com.example.psywell.service;
 
-import com.example.psywell.dto.outputs.user.UsuarioOutput;
+import com.example.psywell.dto.outputs.user.UserOutput;
 import java.util.List;
 
 public interface UserService {
 
-    List<UsuarioOutput>obtenerUsuarios();
+    List<UserOutput>obtenerUsuarios();
 }

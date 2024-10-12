@@ -1,23 +1,19 @@
 package com.example.psywell.repository;
 
-import com.example.psywell.dto.outputs.user.UsuarioOutput;
-import com.example.psywell.entity.Usuarios;
+import com.example.psywell.dto.outputs.user.UserOutput;
+import com.example.psywell.entity.UserEntity;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
-@Repository
-public interface UserRepository extends CrudRepository<Usuarios, Long> {
-    /*
-    @Query("SELECT NEW com.example.psywell.dto.outputs.user.UserOutputs(" +
-            "u.idUsuario, u.nombre, u.rut, u.correo, u.contrasena, " +
-            "u.fechaNacimiento, u.sexo, u.estado) " +
-            "FROM Usuario u WHERE u.estado = true ORDER BY u.nombre ASC")
-    List<UsuarioOutput> obtenerUsuariosActivos();
-
-     */
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
+  /*  @Query("SELECT NEW com.example.psywell.dto.outputs.user.UserOutput(u.idUsuario, u.rut, u.nombre, u.correo, u.contrasena, u.rol, u.fechaNacimiento, u.genero, u.estado) " +
+            "FROM UserEntity u WHERE u.estado = true ORDER BY u.nombre ASC")
+    ArrayList<UserOutput> obtenerUsuariosActivos();*/
 }
+
+
 
 
