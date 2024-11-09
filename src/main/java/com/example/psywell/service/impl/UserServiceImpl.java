@@ -28,11 +28,10 @@ public class UserServiceImpl {
         for (int i = 0 ; i<listado.size(); i++){
             UserOutput out = new UserOutput();
             out.setIdUsuario(listado.get(i).getIdUsuario());
-            out.setRut(listado.get(i).getRut());
             out.setNombre(listado.get(i).getNombre());
-            out.setCorreo(listado.get(i).getCorreo());
+            out.setEmail(listado.get(i).getEmail());
             out.setContrasena(listado.get(i).getContrasena());
-            out.setRol(listado.get(i).getRol());
+            out.setPerfil(listado.get(i).getPerfil());
             out.setFechaNacimiento(listado.get(i).getFechaNacimiento());
             out.setGenero(listado.get(i).getGenero());
             out.setEstado(listado.get(i).getEstado());
@@ -45,10 +44,9 @@ public class UserServiceImpl {
     public UserEntity addUser(UserInput usuarioInput) {
         UserEntity user = new UserEntity();
         user.setNombre(usuarioInput.getNombre());
-        user.setRut(usuarioInput.getRut());
-        user.setCorreo(usuarioInput.getCorreo());
+        user.setEmail(usuarioInput.getEmail());
         user.setContrasena(usuarioInput.getContrasena());
-        user.setRol(usuarioInput.getRol());
+        user.setPerfil(usuarioInput.getPerfil());
         user.setFechaNacimiento(usuarioInput.getFechaNacimiento());
         user.setGenero(usuarioInput.getGenero());
         user.setEstado(true);
@@ -62,11 +60,10 @@ public class UserServiceImpl {
         for (int i = 0 ; i<listado.size(); i++){
             UserOutput out = new UserOutput();
             out.setIdUsuario(listado.get(i).getIdUsuario());
-            out.setRut(listado.get(i).getRut());
             out.setNombre(listado.get(i).getNombre());
-            out.setCorreo(listado.get(i).getCorreo());
+            out.setEmail(listado.get(i).getEmail());
             out.setContrasena(listado.get(i).getContrasena());
-            out.setRol(listado.get(i).getRol());
+            out.setPerfil(listado.get(i).getPerfil());
             out.setFechaNacimiento(listado.get(i).getFechaNacimiento());
             out.setGenero(listado.get(i).getGenero());
             out.setEstado(listado.get(i).getEstado());
