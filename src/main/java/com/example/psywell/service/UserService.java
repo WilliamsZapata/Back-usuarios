@@ -6,7 +6,10 @@ import java.util.List;
 
 public interface UserService {
 
-   public List<UserOutput>obtenerUsuarios();
+    public List<UserOutput> obtenerUsuarios();
 
     public UserOutput addUser(UserInput usuarioInput);
+
+    // Método para verificar si un usuario existe basado en el correo
+    public boolean isUserExist(String email);
 }
