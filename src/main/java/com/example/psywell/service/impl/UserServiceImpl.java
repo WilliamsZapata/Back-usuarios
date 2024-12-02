@@ -71,7 +71,6 @@ public class UserServiceImpl {
         return listOut.get(0);
     }
 
-    // Nuevo método para verificar si el usuario existe o guardarlo si no existe
     public UserEntity verificarOGuardarUsuario(UserInput usuarioInput) {
         Optional<UserEntity> usuarioExistente = userRepository.findByEmail(usuarioInput.getEmail());
         if (usuarioExistente.isPresent()) {
